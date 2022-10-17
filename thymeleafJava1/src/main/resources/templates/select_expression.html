@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head xmlns:th="http://www.thymeleaf.org">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Selection expression</h2>
+	<div th:object="${student}">
+	<div>
+	<div>ID: <strong th:text="*{id}"></strong></div>
+	<div>Name: <strong th:text="*{name}"></strong></div>
+	<div>City: <strong th:text="*{city}"></strong></div>
+	<div>Email: <strong th:text="*{email}"></strong></div>
+	</div>
+	</div>
+</body>
+</html>

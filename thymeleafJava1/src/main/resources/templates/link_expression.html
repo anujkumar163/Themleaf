@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thyeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/demo.css}">
+</head>
+<body>
+	<h3>link Expression</h3>
+	<a href="#">Click here</a><br>
+	General way of calling:<a href="message-expression">Meaage</a><br>
+	Thymeleaf way of calling:<a th:href="@{message-expression}">MessageThy</a><br>
+	
+	There puting dynamic value of id in given url from backend:
+	<a th:href="@{/variable_expression/{id}(id=${id})}">Clct to getid</a>
+</body>
+</html>
